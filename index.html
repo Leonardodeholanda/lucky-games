@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jogos de sorte online</title>
+</head>
+
+<body>
+    <div class="random-container">
+        <h2>Sortear um número entre:</h2>
+        <div>
+            <input placeholder="00" class="input-min" type="number">
+            <input placeholder="00" class="input-max" type="number">
+        </div>
+        <p id="random-number"></p>
+        <button onclick="generateNumber()" class="random-button">Sortear</button>
+    </div>
+    <div class="spin-container">
+        <div class="spin-button">Rodar</div>
+        <div class="wheel">
+            <div class="number" style="--i:1;--clr: #fff"><span>100</span></div>
+            <div class="number" style="--i:2;--clr: #e92e3d"><span>25</span></div>
+            <div class="number" style="--i:3;--clr: #fff"><span>50</span></div>
+            <div class="number" style="--i:4;--clr: #e92e3d"><span>0</span></div>
+            <div class="number" style="--i:5;--clr: #fff"><span>100</span></div>
+            <div class="number" style="--i:6;--clr: #e92e3d"><span>25</span></div>
+            <div class="number" style="--i:7;--clr: #fff"><span>50</span></div>
+            <div class="number" style="--i:8;--clr: #e92e3d"><span>0</span></div>
+        </div>
+    </div>
+    <div class="dice-container">
+        <div class="dice-wrapper">
+        <img src="./assets/dice-1.png" id="die-1" class="dice">
+        <img src="./assets/dice-2.png" id="die-2" class="dice">
+        </div>
+        <p id="total"></p>
+        <button onclick="rollDice()" class="dice-button">Jogar Dados</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
